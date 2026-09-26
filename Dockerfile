@@ -38,12 +38,8 @@ COPY src/ ./src/
 # Copy built frontend from Stage 1 into the backend static mount directory
 COPY --from=frontend-builder /app/frontend/dist ./src/frontend/dist
 
-# Expose server port (Hugging Face Spaces default is 7860)
-EXPOSE 7860
+# Expose default port
+EXPOSE 8000
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:7860/api/health || exit 1
-
-# Start FastAPI via Uvicorn
-CMD ["uvicorn", "src.backend.main:app", "--host", "0.0.0.0", "--port", "7860"]
+# Start FastAPI via Uvicorn respecting dynamic cloud environment PORT
+CMD ["sh", "-c", "uvicorn src.backend.main:app --host 0.0.0.0 --port ${PORT:-8000}"]

@@ -1,14 +1,3 @@
----
-title: Algerian Forest Fire Prediction
-emoji: 🌲
-colorFrom: red
-colorTo: yellow
-sdk: docker
-app_port: 7860
-pinned: false
-license: mit
----
-
 # Algerian Forest Fires — Fire Weather Index (FWI) Prediction
 
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.13-3776AB?logo=python&logoColor=white)](https://www.python.org/)
