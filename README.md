@@ -7,8 +7,12 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.9.0-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Render-46E3B7?style=flat&logo=render&logoColor=white)](https://algerian-forest-fire-prediction-5u8g.onrender.com)
 
 An end-to-end machine learning system that predicts wildfire danger using the Canadian Forest Fire Weather Index (FWI) framework. Trained on meteorological and environmental observations from two distinct bioclimatic regions in Northern Algeria, the project combines an exploratory data analysis pipeline, regularized regression modeling, a validated FastAPI inference service, and a responsive React/TypeScript analytical dashboard.
+
+> 🌐 **Live Application**: [algerian-forest-fire-prediction-5u8g.onrender.com](https://algerian-forest-fire-prediction-5u8g.onrender.com)  
+> 📖 **Interactive API Docs (Swagger UI)**: [algerian-forest-fire-prediction-5u8g.onrender.com/docs](https://algerian-forest-fire-prediction-5u8g.onrender.com/docs)
 
 ---
 
@@ -158,6 +162,8 @@ algerian-forest-fire-prediction/
 ---
 
 ## 🔌 API Endpoints
+
+The API is hosted locally at `http://localhost:8000` and in production at `https://algerian-forest-fire-prediction-5u8g.onrender.com`.
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
